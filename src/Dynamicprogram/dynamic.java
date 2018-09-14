@@ -21,4 +21,16 @@ public class dynamic {
         String identitas = "Dwi paga ayuba / X RPL 2 / 10";
         
         tampilJudul(identitas);
+        
+        int n = tampilInput();
+        BigInteger hasil = fibo(n);
+        tampilHasil(n, hasil);
+    }
+    private static int tampilInput(){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        
+        return n;
 }
